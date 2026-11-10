@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ro">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>PetCare - Prototype</title>
+    <link rel="stylesheet" href="prototype.css">
+</head>
+
+<body>
+
+    <main class="app">
+
+        <header>
+            <h1>🐾 PetCare</h1>
+            <p>Magazin online pentru animale</p>
+            <p>🔔 Notificări | ⚙️ Preferințe</p>
+        </header>
+
+        <!-- SEARCH -->
+
+        <section>
+            <h2>Caută produse</h2>
+
+            <input
+                type="search"
+                placeholder="Caută produse..."
+                list="produse"
+            >
+
+            <datalist id="produse">
+                <option value="Hrană pentru pisici">
+                <option value="Hrană pentru câini">
+                <option value="Jucării pentru pisici">
+                <option value="Accesorii pentru câini">
+            </datalist>
+
+            <h3>Căutări recente</h3>
+
+            <ul>
+                <li>Hrană pentru pisici</li>
+                <li>Jucării pentru pisici</li>
+            </ul>
+        </section>
+
+        <!-- CATEGORIES -->
+
+        <section>
+            <h2>Categorii</h2>
+
+            <div class="categories">
+                <div>🐱 Pisici</div>
+                <div>🐶 Câini</div>
+                <div>❤️ Favorite</div>
+            </div>
+        </section>
+
+        <!-- PRODUCTS -->
+
+        <section>
+            <h2>Produse populare</h2>
+
+            <div class="product">
+                <h3>🥫 Hrană pentru pisici</h3>
+                <p>Disponibil în stoc</p>
+                <span>♡ Favorite</span>
+            </div>
+
+            <div class="product">
+                <h3>🦴 Hrană pentru câini</h3>
+                <p>Disponibil în stoc</p>
+                <span>♡ Favorite</span>
+            </div>
+        </section>
+
+        <!-- REPORT -->
+
+        <section>
+            <details>
+                <summary>+ Raportează o problemă</summary>
+
+                <h3>Formular de raportare</h3>
+
+                <label for="product-name">
+                    Numele produsului
+                </label>
+
+                <input
+                    type="text"
+                    id="product-name"
+                    placeholder="Numele produsului"
+                >
+
+                <label for="problem">
+                    Descrierea problemei
+                </label>
+
+                <textarea
+                    id="problem"
+                    rows="4"
+                    placeholder="Descrie problema..."
+                ></textarea>
+
+                <button type="button">
+                    Trimite raportul
+                </button>
+            </details>
+        </section>
+
+        <footer>
+            <p>PetCare Team - Prototype</p>
+        </footer>
+
+    </main>
+
+</body>
+</html>
